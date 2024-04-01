@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Project</h1>
+  <p>Resize the browser window to see the effect.</p>
+</div>
+
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="projects.html">Project</a>
+  <a href="travel.html">Travel</a>
+  <a href="#" style="float:right">Link</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+        <h3>Project Name: Online Bookstore System</h3>  
+        <style>  
+            
+            img {  
+              width: 500px;
+              height: auto;  
+              border-radius: 10px; 
+            }  
+          </style>  
+        <p><strong>Background:</strong> With the rise of the internet, more and more people are opting for online book purchases. To cater to this demand, we developed a feature-rich online bookstore system.</p>  
+        <p><strong>Functionalities:</strong></p>  
+        <ul>  
+            <li>User registration and login</li>  
+            <li>Browsing of book listings with categorization, filtering, and search functionality</li>  
+            <li>Viewing book details including author, publisher, price, stock availability, etc.</li>  
+            <li>Adding books to cart and checkout</li>  
+            <li>Order management, including order status tracking and order history</li>  
+            <li>Admin backend for managing books, users, orders, and other data</li>  
+        </ul>  
+        <p><strong>Technology Stack:</strong></p>  
+        <ul>  
+            <li>Front-end: HTML/CSS/JavaScript, React.js, Redux</li>  
+            <li>Back-end: Node.js, Express, MongoDB</li>  
+            <li>Other Technologies: JWT authentication, Stripe payment integration, AWS cloud services</li>  
+        </ul>  
+        <p><strong>Achievements:</strong> After the launch of the project, we attracted a significant number of registered users and book purchases, contributing to the growth of our business and enhancing customer satisfaction.</p>   
+    </div>  
+    <div class="card">
+        <h3>Project Name: Smart Health Management System</h3> 
+        <style>  
+            img {  
+              width: 500px;  
+              height: auto;  
+              border-radius: 10px; 
+            }  
+          </style>   
+        <p><strong>Background:</strong> With the increasing awareness of health and fitness, individuals are seeking personalized solutions to manage their well-being. The Smart Health Management System aims to provide users with a comprehensive platform that collects, analyzes, and advises on their health data, enabling them to lead healthier lives.</p>  
+        <p><strong>Functionalities:</strong></p>  
+        <ul>  
+            <li>Real-time Data Collection: Utilizes wearable devices to gather vital health metrics such as heart rate, blood pressure, and sleep patterns.</li>  
+            <li>Personalized Health Assessments: Generates tailored health reports based on collected data, highlighting areas of concern and offering improvement strategies.</li>  
+            <li>Customized Wellness Plans: Creates personalized diet and exercise plans tailored to each user's needs and goals.</li>  
+            <li>Educational Resources: Provides access to a library of health articles, videos, and podcasts to enhance users' knowledge of health and wellness.</li>  
+        </ul>  
+        <p><strong>Technology Stack:</strong></p>  
+        <ul>  
+            <li>Front-end: Developed using React Native for cross-platform compatibility, ensuring a seamless user experience. </li>  
+            <li>Back-end: Built on the Spring Boot framework to handle data storage, analysis, and the implementation of recommendation algorithms.</li>  
+            <li>Data Storage: Integrated MySQL for structured data and MongoDB for unstructured data storage.</li>  
+            <li>Analytics & ML: Employed Python for data processing and analysis, leveraging machine learning techniques to automate health assessments and recommendation generation.</li>  
+        </ul>  
+        <p><strong>Achievements:</strong> After the launch of the project, we attracted a significant number of registered users and book purchases, contributing to the growth of our business and enhancing customer satisfaction.</p>   
+    </div> 
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <img src="D:\table\姚\week4\my picture.jpg" alt="Description of image">
+      <p>Hello,everybody!My name is Gnosis and I come from Ningbo, Zhejiang. I am a student. I like play vedio games and print.<p> 
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <img src="D:\table\姚\week4\picture1.jpg" alt="Description of image">
+      <img src="D:\table\姚\week4\picture2.jpg"  alt="Description of image">      
+      <img src="D:\table\姚\week4\picture3.jpg"  alt="Description of image">     
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Exploring Yunnan and Encountering the Integration of Nature and Culture<p>
+
+        <p> Travel is a captivating experience that takes us to far-off places. It opens our eyes to diverse cultures and landscapes<p>
+          
+        <p>enriching our understanding of the world. Each trip is a new adventure, filled with exciting discoveries and unforgettable memories. <p>
+          
+        </p>discoveries and unforgettable memories. Travel not only broadens our horizons but also strengthens our appreciation for life's beauty and diversity.<p >
+        </p> This trip to Yunnan has allowed me to deeply experience the beauty of the integration of nature and culture. Here, I have experienced the magnifiatural scenery, felt a strong cultural atmosphere, and made many enthusiastic friends. This trip not only brought me beautiful memories, but also gave me a deeper reflection on life. I believe that in the days to come, I will continue to move forward with this beautiful memory and insight, exploring more unknown worlds.</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Copyright & Contact Information</h2>
+</div>
+
+</body>
+</html>
